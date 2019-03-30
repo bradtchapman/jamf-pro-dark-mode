@@ -298,13 +298,14 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 
 .jamf-pro-dashboard .widgets-exist
 {
-    background #2f2f2f;
+	background-image: none;
 }
 
 @media only screen and (min-device-pixel-ratio:2),only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-resolution:192dpi)
 {
 	.jamf-pro-dashboard .widgets-exist
 	{
+		background-image: none;
 	}
 }
 
@@ -313,6 +314,7 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 
     .jamf-pro-dashboard .widgets-exist
     {
+	    background-image: none;
     }
 }
 
@@ -320,6 +322,7 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 {
 	.jamf-pro-dashboard .widgets-exist
 	{
+		background-image: none;
 	}
 }
 
