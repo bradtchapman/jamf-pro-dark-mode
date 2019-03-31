@@ -142,7 +142,7 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
     position: relative;
 }
 .list-header, .jamf-tabs {
-    background: #333333;
+    background: #2f2f2f;
 }
 .jamf-tabs li:hover a, .jamf-tabs li.active a, jamf-scrollbox-sidenav .side-navigation>li a .heading {
     color: #1247c1;
@@ -310,8 +310,22 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
     font-weight: 400;
 }
 
+.jamf-side-nav-background
+{
+	background: #2f2f2f;
+	position: absolute;
+	height: 100%;
+	width: 255px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+
+
 .jamf-assistant-sidebar {
-    background: #333333;
+    background: #2f2f2f;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -575,8 +589,8 @@ breadcrumb .breadcrumb-glow
     right:0;
     bottom:0;
     height:82px;
-    -webkit-box-shadow:0 10px 10px -8px #333333;
-    box-shadow:0 10px 10px -8px #333333;
+    -webkit-box-shadow:0 10px 10px -8px #2f2f2f;
+    box-shadow:0 10px 10px -8px #2f2f2f;
 }
 
 .form-inside 
@@ -1283,7 +1297,7 @@ apps-autocomplete table ul li.active,apps-autocomplete table ul li:hover{
 }
 .jamf-table-theme
 {
-	background-color: #333333;
+	background-color: #2f2f2f;
 	color: #dddddd;
 }
 
