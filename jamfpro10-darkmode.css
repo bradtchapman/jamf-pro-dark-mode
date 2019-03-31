@@ -84,6 +84,18 @@ html, body, .jamf-list tbody td, .jamf-inner-list tbody td, .jamf-label {
     background: #3f3f3f;
 }
 
+.software-title-list .list-header {
+    padding-left: 10px;
+    background: #3f3f3f;
+    border-bottom: 0;
+    -webkit-box-shadow: 0 0;
+    box-shadow: 0 0;
+}
+
+.software-title-list .table-wrapper table thead tr th {
+    background: #4f4f4f;
+}
+
 .configurationprofilesdashboard #wrapper #dashboard-container .dashboard-content:nth-of-type(odd), .policiesdashboard #wrapper #dashboard-container .dashboard-content:nth-of-type(odd), .distributionserverdashboard #wrapper #dashboard-container .dashboard-content:nth-of-type(odd) {
     background-color: #2f2f2f;
 }
