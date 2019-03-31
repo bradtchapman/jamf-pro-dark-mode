@@ -1,7 +1,3 @@
-/* 
-** Customized by Brad Chapman, March 2019
-*/ 
-
 * {
     font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
     text-rendering: optimizeLegibility;
@@ -298,14 +294,14 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 
 .jamf-pro-dashboard .widgets-exist
 {
-	background-image: none;
+    background-image: none;
 }
 
 @media only screen and (min-device-pixel-ratio:2),only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min-resolution:192dpi)
 {
 	.jamf-pro-dashboard .widgets-exist
 	{
-		background-image: none;
+	    background-image: none;
 	}
 }
 
@@ -314,8 +310,9 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 
     .jamf-pro-dashboard .widgets-exist
     {
-	    background-image: none;
-    }
+    background-image: none;
+
+	}
 }
 
 @media only screen and (max-width:48em) and (min-device-pixel-ratio:2),only screen and (max-width:48em) and (-webkit-min-device-pixel-ratio:2),only screen and (max-width:48em) and (min-resolution:192dpi)
@@ -324,6 +321,20 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 	{
 		background-image: none;
 	}
+}
+
+.jamf-donut-chart .chart-title
+{
+    fill: #778eb1;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.jamf-donut-chart .chart-subtitle 
+{
+    fill: #7f7f7f;
+    font-size: 13px;
+    font-weight: 400;
 }
 
 .jamf-assistant-sidebar {
