@@ -96,6 +96,13 @@ html, body, .jamf-list tbody td, .jamf-inner-list tbody td, .jamf-label {
     background: #4f4f4f;
 }
 
+.status .jamf-pro-dashboard
+{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    background-color: #2f2f2f;
+}
 .configurationprofilesdashboard #wrapper #dashboard-container .dashboard-content:nth-of-type(odd), .policiesdashboard #wrapper #dashboard-container .dashboard-content:nth-of-type(odd), .distributionserverdashboard #wrapper #dashboard-container .dashboard-content:nth-of-type(odd) {
     background-color: #2f2f2f;
 }
