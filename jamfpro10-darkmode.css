@@ -20,16 +20,6 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: .5rem;
     line-height: 1.4;
 }
-.login-page .login-form input {
-    display: block;
-    height: 30px;
-    margin: 6px 10px 11px;
-    border: 0;
-    width: 75%;
-    padding: 8px 16px;
-    color: #dddddd;
-    font-size: 14px;
-}
 
 html, body, .jamf-list tbody td, .jamf-inner-list tbody td, .jamf-label {
     color: #DDDDDD;
@@ -180,23 +170,6 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
     margin-top: 10px;
     margin-bottom: 10px;
     letter-spacing: 1px;
-}
-
-.login-page .login-form input {
-    display: block;
-    height: 30px;
-    margin: 6px 10px 11px;
-    border: 0;
-    width: 75%;
-    padding: 8px 16px;
-    color: #dddddd;
-    font-size: 14px;
-}
-
-.login-page .login-form input:focus
-{
-	outline: 0;
-	color: #dddddd;
 }
 
 .jamf-dropdown
@@ -511,19 +484,51 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
     background-color: #303030;
 }
 
+.login-page .login-form
+{
+    background-color: #4e5a6f;
+}
+
 .login-page #jamf-logo-login 
 {
     background-color: #5b6982;
 }
 
-.login-page .login-form
+.login-page .login-form span {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #dddddd;
+    padding: 14px 16px 0;
+    text-transform: uppercase;
+    cursor: default;
+}
+
+.login-page .login-form input {
+    display: block;
+    height: 30px;
+    margin: 6px 10px 11px;
+    border: 0;
+    width: 75%;
+    padding: 8px 16px;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.login-page .login-form input:focus
 {
-    background-color: #778eb1;
+	outline: 0;
+	color: #dddddd;
+    background-color: #4e5a6f;
+    color: #ffffff;
+    cursor: text;
+    
 }
 
 breadcrumb .breadcrumb 
 {
-    background-color: #4f4f4f;
+    background-color: #5b6982;
     border-bottom: 0px;
 }
 
