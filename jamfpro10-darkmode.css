@@ -408,10 +408,17 @@ assistant-steps,.jamf-assistant-content-wrapper
 	-ms-overflow-style: -ms-autohiding-scrollbar;
 	-webkit-box-shadow: 0 0 10px #4f4f4f;
 	box-shadow: 0 0 10px #4f4f4f;
+    background-color: #4f4f4f
 }
 
+assistant-sidebar .jamf-assistant-stages, .jamf-assistant-sidebar .jamf-assistant-stages {
+    font-size: 14px;
+    color: #dddddd;
+    line-height: normal;
+    position: relative;
+}
 .jamf-assistant-sidebar {
-    background: #2f2f2f;
+    background: #3f3f3f;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -445,6 +452,8 @@ assistant-steps,.jamf-assistant-content-wrapper
     -ms-overflow-style: -ms-autohiding-scrollbar;
 }
 
+.jamf-assistant-content-wrapper-complete.jamf-assistant-content-wrapper .jamf-assistant-content .jamf-label,.jamf-assistant-content-wrapper-complete.jamf-assistant-content-wrapper .jamf-assistant-content .jamf-alert .jamf-alert-message .jamf-alert-title,.jamf-alert .jamf-alert-message .jamf-assistant-content-wrapper-complete.jamf-assistant-content-wrapper .jamf-assistant-content .jamf-alert-title,.jamf-assistant-content-wrapper-complete.jamf-assistant-content-wrapper .jamf-assistant-content .patch-remote-source-test-pane #message-wrapper .summary .summary-title,.patch-remote-source-test-pane #message-wrapper .summary .jamf-assistant-content-wrapper-complete.jamf-assistant-content-wrapper .jamf-assistant-content .summary-title { color: #ffffff; }
+
 .jamf-assistant-content-wrapper-complete.jamf-assistant-content-wrapper {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -457,12 +466,12 @@ assistant-steps,.jamf-assistant-content-wrapper
 .jamf-assistant-content-wrapper-complete.jamf-assistant-content-wrapper .jamf-assistant-content
 {
 	max-width: 75%;
-	background-color: #aaaaaa;
+	background-color: #5a6982;
 	text-align: center;
 	border-radius: 4px;
 	padding: 2rem;
-	-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1),0 1px 0 0 #e6e6e6;
-	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1),0 1px 0 0 #e6e6e6;
+	-webkit-box-shadow: 0 0 2px 0 rgba(0,0,0,0.1),0 2px 0 0 #2f2f2f;
+	box-shadow: 0 0 2px 0 rgba(0,0,0,0.1),0 2px 0 0 #2f2f2f;
 	margin: 2em 0 100px;
 }
 
