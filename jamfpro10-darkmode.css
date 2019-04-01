@@ -1,9 +1,3 @@
-/* 
-Written by Brad Chapman
-https://github.com/bradtchapman/jamf-pro-dark-mode
-Adapted from the CSS in Jamf Pro.  Updated 2019-03-31.
-*/
-
 * {
     font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
     text-rendering: optimizeLegibility;
@@ -1269,10 +1263,7 @@ select:hover {
     width: 24vw;
     padding-top: 15px;
     padding-bottom: 80px;
-	background:transparent;
-    background-size:10px 10px
-    -webkit-box-shadow: 0 1px 0 0 #2f2f2f, 1px 0 0 0 #303030;
-    box-shadow: 0 1px 0 0 #2f2f2f, 1px 0 0 0 #303030;
+	background-image: none;
     position: fixed;
     top: 69px;
     overflow: auto;
@@ -1636,5 +1627,3 @@ apps-autocomplete table ul li.active,apps-autocomplete table ul li:hover{
 	color: #008ee8;
 	background: inherit;
 }
-
-
