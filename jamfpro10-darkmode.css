@@ -3,6 +3,7 @@
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
 }
+
 #notification-modal .modal-body .notification-alert{
     border:1px solid #3b3b3b;
 }
@@ -214,7 +215,7 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 }
 
 .nav-group-header {
-    font-family: ProximaNova,"Helvetica Nueu",Verdana,sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, ProximaNova,"Helvetica Neue",Verdana,sans-serif;
     font-weight: 700;
     color: #dddddd;
     text-transform: uppercase;
@@ -256,7 +257,7 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 .jamf-pro-dashboard #dashboard-container .dashboard-content #dashboard-header ul li h2, .configurationprofilesdashboard #dashboard-container .dashboard-content #dashboard-header ul li h2, .distributionserverdashboard #dashboard-container .dashboard-content #dashboard-header ul li h2, .policiesdashboard #dashboard-container .dashboard-content #dashboard-header ul li h2 {
     display: block;
     margin: 0;
-    font-family: ProximaNova,"Helvetica Nueu",Verdana,sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, ProximaNova,"Helvetica Neue",Verdana,sans-serif;
     font-size: 20px;
     font-weight: 700;
     color: #dddddd;
@@ -286,7 +287,7 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 }
 
 .jamf-pro-dashboard #dashboard-container .dashboard-content h3 a, .jamf-pro-dashboard #dashboard-container .dashboard-content h3 a.view-all, .jamf-pro-dashboard #dashboard-container .dashboard-content h3.view-all, .configurationprofilesdashboard #dashboard-container .dashboard-content h3 a, .configurationprofilesdashboard #dashboard-container .dashboard-content h3 a.view-all, .configurationprofilesdashboard #dashboard-container .dashboard-content h3.view-all, .distributionserverdashboard #dashboard-container .dashboard-content h3 a, .distributionserverdashboard #dashboard-container .dashboard-content h3 a.view-all, .distributionserverdashboard #dashboard-container .dashboard-content h3.view-all, .policiesdashboard #dashboard-container .dashboard-content h3 a, .policiesdashboard #dashboard-container .dashboard-content h3 a.view-all, .policiesdashboard #dashboard-container .dashboard-content h3.view-all {
-    font-family: ProximaNova,"Helvetica Nueu",Verdana,sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, ProximaNova,"Helvetica Neue",Verdana,sans-serif;
     font-size: 17px;
     font-weight: 600;
     color: #dddddd;
@@ -414,7 +415,7 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
 .radio-button-wrapper .label
 {
 	display: inline-flex;
-	font-family: ProximaNova,"Helvetica Nueu",Verdana,sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, ProximaNova,"Helvetica Neue",Verdana,sans-serif;
 	font-size: 14px;
 	color: #dddddd;
 	margin-right: auto;
@@ -485,6 +486,13 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
     align-items: center;
 }
 
+.upload-modal-wrapper .modal-body .upload-wrapper .drag-and-drop:hover+label .jamf-button
+{
+	border: 2px solid #ffffff;
+    color: #ffffff;
+	background-image: none;
+    background-color: #7f7f7f
+}
 
 
 .jamf-assistant-actions {
@@ -517,32 +525,13 @@ input.disabled.jamf-input-text, .jamf-table-theme input.disabled.ag-filter-filte
     background: transparent;
 }
 
-.jamf-standard-buttons
-{
-	background: linear-gradient(to bottom,rgba(24,24,24,0) 0,rgba(24,24,24,0.75) 25%,rgba(24,24,24,0.95) 50%);
-	position: fixed;
-	display: flex;
-	-webkit-box-align: start;
-	-ms-flex-align: start;
-	align-items: flex-start;
-	-ms-flex-wrap: wrap;
-	flex-wrap: wrap;
-	bottom: 0;
-	right: 0;
-	left: 0;
-	z-index: 1;
-	padding: 21px;
-}
 
-
-/* Menu and payload item backgrounds */
  jamf-scrollbox-sidenav .side-navigation>li.current a, .jamf-section:nth-of-type(even) {
     background: #303030;
 }
-/* Rough tweak to show full opacity when "previewing" a policy before editing */
  .disabled 
 {
-    opacity: 1 !important;
+    opacity: 0.5 !important;
 }
 
 .flex-container-column 
@@ -949,21 +938,21 @@ jamf-tabs[tab-type="side-tabs"] ul.jamf-tabs li.display-errors:hover,jamf-tabs[t
     text-overflow: ellipsis;
 }
 .jamf-list thead th.bordered,.jamf-inner-list thead th.bordered{
-    border-left-color:#555555;
-    border-right-color:#555555;
+    border-left-color:#4f4f4f;
+    border-right-color:#4f4f4f;
 }
 
 .jamf-list thead th .table-divider::after,.jamf-inner-list thead th .table-divider::after{
-    background:#555555;
+    background:#4f4f4f;
     height:60%;
     top:40%
 }
 .jamf-list tbody td.bordered,.jamf-inner-list tbody td.bordered{
-    border-right-color:#555555;
-    border-left-color:#555555;
+    border-right-color:#4f4f4f;
+    border-left-color:#4f4f4f;
 }
 .jamf-list.bordered-left,.jamf-inner-list.bordered-left{
-    border-left:1px solid #555555;
+    border-left:1px solid #4f4f4f;
 }
 
 
@@ -974,19 +963,14 @@ jamf-tabs[tab-type="side-tabs"] ul.jamf-tabs li.display-errors:hover,jamf-tabs[t
     background-color:#3f3f3f
 }
 .jamf-list:not(.jamf-list-expandable) tbody tr td,.jamf-list:not(.jamf-inner-list-expandable) tbody tr td,.jamf-inner-list:not(.jamf-list-expandable) tbody tr td,.jamf-inner-list:not(.jamf-inner-list-expandable) tbody tr td{
-    border-bottom:1px solid #555555
+    border-bottom:1px solid #4f4f4f
 }
 .jamf-list.jamf-list-expandable tbody tr.odd,.jamf-list.jamf-inner-list-expandable tbody tr.odd,.jamf-inner-list.jamf-list-expandable tbody tr.odd,.jamf-inner-list.jamf-inner-list-expandable tbody tr.odd{
     background-color:#2F2F2F
 }
-/*
-.jamf-list.jamf-list-expandable tbody tr.even,.jamf-list.jamf-inner-list-expandable tbody tr.even,.jamf-inner-list.jamf-list-expandable tbody tr.even,.jamf-inner-list.jamf-inner-list-expandable tbody tr.even{
-    background-color:#666666
-}
-*/
 
 .jamf-list.jamf-list-expandable tbody tr td,.jamf-list.jamf-inner-list-expandable tbody tr td,.jamf-inner-list.jamf-list-expandable tbody tr td,.jamf-inner-list.jamf-inner-list-expandable tbody tr td{
-    border-bottom:1px solid #555555
+    border-bottom:1px solid #4f4f4f
 }
 .jamf-list:not(.jamf-list-expandable) thead tr:nth-child(odd),.jamf-list:not(.jamf-inner-list-expandable) thead tr:nth-child(odd),.jamf-inner-list:not(.jamf-list-expandable) thead tr:nth-child(odd),.jamf-inner-list:not(.jamf-inner-list-expandable) thead tr:nth-child(odd){
     background-color:#2F2F2F
@@ -1090,7 +1074,7 @@ jamf-tabs[tab-type="side-tabs"] ul.jamf-tabs li.display-errors:hover,jamf-tabs[t
 .jamf-select-wrapper::after,.dataTables_wrapper .dataTables_paginate .paginate-input-wrapper::after,.datatables-pagination .dataTables_paginate .paginate-input-wrapper::after,.jamf-table-theme .ag-menu .ag-filter div div:not(.ag-filter-apply-panel):not(.ag-filter-body)::after
 {
 	border: solid 4px;
-	border-color: #5b6982 transparent transparent transparent;
+	border-color: #dddddd transparent transparent transparent;
 	border-top-width: 5px;
 	content: "";
 	position: absolute;
@@ -1398,7 +1382,7 @@ apps-autocomplete table ul li.active,apps-autocomplete table ul li:hover{
 .jamf-table-theme{
     background-color:#363636;
     color:#666;
-    font:400 14px ProximaNova,"Helvetica Neue",Verdana,sans-serif
+    font:400 14px BlinkMacSystemFont, -apple-system, ProximaNova,"Helvetica Neue",Verdana,sans-serif
 }
 
 .jamf-table-theme .ag-row-odd{
@@ -1581,8 +1565,24 @@ apps-autocomplete table ul li.active,apps-autocomplete table ul li:hover{
 	text-shadow: 1px 1px 0 #3f3f3f;
 }
 
+/* 
+.button
+{
+	font-size: 14px;
+	display: inline-block;
+	width: auto;
+	margin: 0 1rem 1rem 0;
+	background: #4f4f4f;
+    color: #dddddd;
+}
+*/
+
 .button,.jamf-button,.jamf-tabs li.vertical a.jamf-button
 {
+	font-size: 14px;
+	width: auto;
+	background-color: #4f4f4f;
+	color: #dddddd;
 	display: inline-block;
 	border: 0;
 	text-align: center;
@@ -1599,31 +1599,549 @@ apps-autocomplete table ul li.active,apps-autocomplete table ul li:hover{
 	border-radius: 0;
 }
 
+/*
+.button:hover,.button:focus
+{
+	background-color: #004876;
+	color: #ffffff;
+}
+
+
+.button.secondary
+{
+	background: #f1f1f1;
+	color: #000;
+}
+
+.button.secondary:hover,.button.secondary:focus
+{
+	background: #cdcdcd;
+	color: #000;
+}
+
+.button.success
+{
+	background: #43ac6a;
+	color: #fff;
+}
+
+.button.success:hover,.button.success:focus
+{
+	background: #39925a;
+	color: #fff;
+}
+
+.button.warning
+{
+	background: #f08a24;
+	color: #fff;
+}
+
+.button.warning:hover,.button.warning:focus
+{
+	background: #dc750f;
+	color: #fff;
+}
+
+.button.alert
+{
+	background: #f04124;
+	color: #fff;
+}
+
+.button.alert:hover,.button.alert:focus
+{
+	background: #dc2c0f;
+	color: #fff;
+}
+
+.button.info
+{
+	background: #a0d3e8;
+	color: #000;
+}
+
+.button.info:hover,.button.info:focus
+{
+	background: #71bddd;
+	color: #000;
+}
+
+.button.dark
+{
+	background: #232323;
+	color: #fff;
+}
+
+.button.dark:hover,.button.dark:focus
+{
+	background: #1e1e1e;
+	color: #fff;
+}
+
+
+.button.hollow
+{
+	border: 1px solid #00558b;
+	background: transparent;
+	color: #00558b;
+}
+
+.button.hollow:hover,.button.hollow:focus
+{
+	border-color: #008ee8;
+	background: transparent;
+	color: #008ee8;
+}
+
+.button.hollow.secondary
+{
+	border: 1px solid #f1f1f1;
+	background: transparent;
+	color: #f1f1f1;
+}
+
+.button.hollow.secondary:hover,.button.hollow.secondary:focus
+{
+	border-color: #f5f5f5;
+	background: transparent;
+	color: #f5f5f5;
+}
+
+.button.hollow.success
+{
+	border: 1px solid #43ac6a;
+	background: transparent;
+	color: #43ac6a;
+}
+
+.button.hollow.success:hover,.button.hollow.success:focus
+{
+	border-color: #6dc68e;
+	background: transparent;
+	color: #6dc68e;
+}
+
+.button.hollow.warning
+{
+	border: 1px solid #f08a24;
+	background: transparent;
+	color: #f08a24;
+}
+
+.button.hollow.warning:hover,.button.hollow.warning:focus
+{
+	border-color: #f4a75b;
+	background: transparent;
+	color: #f4a75b;
+}
+
+.button.hollow.alert
+{
+	border: 1px solid #f04124;
+	background: transparent;
+	color: #f04124;
+}
+
+.button.hollow.alert:hover,.button.hollow.alert:focus
+{
+	border-color: #f4715b;
+	background: transparent;
+	color: #f4715b;
+}
+
+.button.hollow.info
+{
+	border: 1px solid #a0d3e8;
+	background: transparent;
+	color: #a0d3e8;
+}
+
+.button.hollow.info:hover,.button.hollow.info:focus
+{
+	border-color: #b8deee;
+	background: transparent;
+	color: #b8deee;
+}
+
+.button.hollow.dark
+{
+	border: 1px solid #232323;
+	background: transparent;
+	color: #232323;
+}
+
+.button.hollow.dark:hover,.button.hollow.dark:focus
+{
+	border-color: #5a5a5a;
+	background: transparent;
+	color: #5a5a5a;
+}
+
+.button.disabled
+{
+	opacity: .5;
+	cursor: default;
+	pointer-events: none;
+}
+*/
+
+jamf-button { display: inline-flex; }
+
+jamf-button.full-width,jamf-button.jamf-tabs-ul-wrapper.top-tabs,jamf-button.full-width .jamf-button,jamf-button.jamf-tabs-ul-wrapper.top-tabs .jamf-button,jamf-button.full-width .jamf-tabs li.vertical a.jamf-button,.jamf-tabs li.vertical jamf-button.full-width a.jamf-button,jamf-button.jamf-tabs-ul-wrapper.top-tabs .jamf-tabs li.vertical a.jamf-button,.jamf-tabs li.vertical jamf-button.jamf-tabs-ul-wrapper.top-tabs a.jamf-button
+{
+	display: block;
+	width: 100%;
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.jamf-button:last-child .jamf-button,.jamf-tabs li.vertical a.jamf-button:last-child .jamf-button,.jamf-button:last-child .jamf-tabs li.vertical a.jamf-button,.jamf-tabs li.vertical .jamf-button:last-child a.jamf-button { margin-left: 0; }
+
 .jamf-button,.jamf-tabs li.vertical a.jamf-button
 {
 	font-size: 14px;
 	background: transparent;
 	white-space: nowrap;
-	background-color: #3f3f3f;
+	background: #4f4f4f;
 	border: 2px solid #7f7f7f;
 	border-radius: 40px;
 	color: #dddddd;
-	font-family: ProximaNova,"Helvetica Nueu",Verdana,sans-serif;
+    font-family: BlinkMacSystemFont, -apple-system, ProximaNova,"Helvetica Neue",Verdana,sans-serif;
 	font-weight: 400;
 	margin: 0;
 	min-width: 65px;
 	height: 36px;
 	position: relative;
 }
+
 .jamf-button:hover,.jamf-tabs li.vertical a.jamf-button:hover,.jamf-button:focus,.jamf-tabs li.vertical a.jamf-button:focus
 {
-	border-color: #008ee8;
-	color: #008ee8;
+	border-color: #ffffff;
+	background: #inherit;
+	color: #ffffff;
 }
+
+.jamf-button:hover,.jamf-tabs li.vertical a.jamf-button:hover
+{
+	color: #ffffff;
+	border: 2px solid #dddddd;
+	background: #7f7f7f;
+}
+
+.jamf-button.small,.jamf-button.jamf-button-table,.jamf-tabs li.vertical a.jamf-button-table.jamf-button,.jamf-button.jamf-button-table-left,.jamf-tabs li.vertical a.jamf-button-table-left.jamf-button,.jamf-tabs li.vertical a.small.jamf-button
+{
+	font-size: 12px;
+	height: 24px;
+	padding-top: 2px;
+}
+
+a.jamf-button,.jamf-tabs li.vertical a.jamf-button { padding-top: 10px; }
+a.jamf-button.small,a.jamf-button.jamf-button-table,a.jamf-button.jamf-button-table-left,.jamf-tabs li.vertical a.small.jamf-button,.jamf-tabs li.vertical a.jamf-button.jamf-button-table,.jamf-tabs li.vertical a.jamf-button.jamf-button-table-left 
+{
+    padding-top: 6px; 
+}
+
 .jamf-button:focus,.jamf-tabs li.vertical a.jamf-button:focus
 {
 	outline: 0;
 	border: 2px solid #008ee8;
-	color: #008ee8;
-	background: inherit;
+	color: #dddddd;
+	background: #3f3f3f;
 }
+
+.jamf-button:hover,.jamf-tabs li.vertical a.jamf-button:hover
+{
+	color: #ffffff;
+	border: 2px solid #dddddd;
+	background: #7f7f7f;
+}
+
+.jamf-button::before,.jamf-tabs li.vertical a.jamf-button::before
+{
+	color: #dddddd;
+	font-size: 18px;
+}
+
+.jamf-button.icon-only,.jamf-tabs li.vertical a.icon-only.jamf-button
+{
+	min-width: 0;
+	padding: 0;
+	height: 36px;
+	width: 36px;
+}
+
+.jamf-button.icon-only.subtle,.jamf-tabs li.vertical a.icon-only.subtle.jamf-button
+{
+	border-color: transparent;
+	background: 0;
+}
+
+.jamf-button.icon-only.medium,.jamf-tabs li.vertical a.icon-only.medium.jamf-button
+{
+	height: 32px;
+	width: 32px;
+}
+
+.jamf-button.icon-only.small,.jamf-button.icon-only.jamf-button-table,.jamf-tabs li.vertical a.icon-only.jamf-button-table.jamf-button,.jamf-button.icon-only.jamf-button-table-left,.jamf-tabs li.vertical a.icon-only.jamf-button-table-left.jamf-button,.jamf-tabs li.vertical a.icon-only.small.jamf-button
+{
+	-ms-flex-negative: 0;
+	flex-shrink: 0;
+	height: 24px;
+	width: 24px;
+}
+
+.jamf-button.icon-only.small::before,.jamf-button.icon-only.jamf-button-table::before,.jamf-tabs li.vertical a.icon-only.jamf-button-table.jamf-button::before,.jamf-button.icon-only.jamf-button-table-left::before,.jamf-tabs li.vertical a.icon-only.jamf-button-table-left.jamf-button::before,.jamf-tabs li.vertical a.icon-only.small.jamf-button::before
+{
+	font-size: 14px;
+	line-height: 1.7;
+	text-indent: 1px;
+}
+
+.jamf-button.icon-only.no-indent::before,.jamf-tabs li.vertical a.icon-only.no-indent.jamf-button::before,.jamf-button.icon-only.icon-close::before,.jamf-tabs li.vertical a.icon-only.icon-close.jamf-button::before { text-indent: 0; }
+
+.jamf-button.icon-only::before,.jamf-tabs li.vertical a.icon-only.jamf-button::before
+{
+	margin: 0;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	line-height: 0;
+}
+
+a.jamf-button.icon-only.small,a.jamf-button.icon-only.jamf-button-table,.jamf-tabs li.vertical a.icon-only.jamf-button-table.jamf-button,a.jamf-button.icon-only.jamf-button-table-left,.jamf-tabs li.vertical a.icon-only.jamf-button-table-left.jamf-button,.jamf-tabs li.vertical a.icon-only.small.jamf-button { padding: 0; }
+
+a.jamf-button.icon-only::before,.jamf-tabs li.vertical a.icon-only.jamf-button::before
+{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.jamf-button.jamf-button-table,.jamf-tabs li.vertical a.jamf-button-table.jamf-button
+{
+	color: #666;
+	float: right;
+	max-height: 24px;
+	font-weight: 400;
+}
+
+.jamf-button.jamf-button-table-left,.jamf-tabs li.vertical a.jamf-button-table-left.jamf-button
+{
+	color: #666;
+	max-height: 24px;
+	font-weight: 400;
+}
+
+.jamf-button jamf-spinner,.jamf-tabs li.vertical a.jamf-button jamf-spinner
+{
+	margin-top: -4px;
+	padding-top: 1px;
+}
+
+.jamf-button.primary,.jamf-tabs li.vertical a.primary.jamf-button
+{
+	color: #fff;
+	background: #268aff;
+	border: 2px solid #268aff;
+}
+
+.jamf-button.primary:hover,.jamf-tabs li.vertical a.primary.jamf-button:hover,.jamf-button.primary:focus,.jamf-tabs li.vertical a.primary.jamf-button:focus 
+{
+    background: #0d7cff;
+    border: 2px solid #ffffff;
+}
+
+.jamf-button.primary::before,.jamf-tabs li.vertical a.primary.jamf-button::before 
+{ 
+    color: #fff; 
+}
+
+.jamf-button.destructive,.jamf-tabs li.vertical a.destructive.jamf-button
+{
+	color: #fff;
+	border: 2px solid #d94453;
+	background: #d94453;
+}
+
+.jamf-button.destructive:hover,.jamf-tabs li.vertical a.destructive.jamf-button:hover,.jamf-button.destructive:focus,.jamf-tabs li.vertical a.destructive.jamf-button:focus
+{
+    background: #d52f40;
+    border: solid 2px #ffffff;
+}
+.jamf-button.destructive::before,.jamf-tabs li.vertical a.destructive.jamf-button::before 
+{ 
+    color: #fff; 
+}
+.jamf-button.error,.jamf-tabs li.vertical a.error.jamf-button 
+{
+    border: 2px solid #d94453;
+}
+
+.jamf-button.subtle,.jamf-tabs li.vertical a.subtle.jamf-button
+{
+	border: 2px solid rgba(203,208,216,0.3);
+	background: 0;
+	color: #778eb1;
+}
+
+.jamf-button.subtle:hover,.jamf-tabs li.vertical a.subtle.jamf-button:hover,.jamf-button.subtle:focus,.jamf-tabs li.vertical a.subtle.jamf-button:focus,.jamf-button.subtle.active,.jamf-tabs li.vertical a.subtle.active.jamf-button
+{
+	border: 2px solid #dddddd;
+	background: #7f7f7f;
+}
+
+
+.jamf-button.disabled,.jamf-tabs li.vertical a.disabled.jamf-button,.jamf-button[disabled],.jamf-tabs li.vertical a.jamf-button[disabled]
+{
+	pointer-events: none;
+	cursor: default;
+	opacity: .5;
+	-webkit-transition: opacity .6s;
+	transition: opacity .6s;
+}
+
+.jamf-button img,.jamf-tabs li.vertical a.jamf-button img
+{
+	width: 32px;
+	position: absolute;
+	top: 1px;
+	left: 5px;
+}
+
+.jamf-button img+span,.jamf-tabs li.vertical a.jamf-button img+span { padding-left: 24px; }
+
+.jamf-button.icon,.jamf-button.clipboard,.jamf-tabs li.vertical a.clipboard.jamf-button,.jamf-tabs li.vertical a.icon.jamf-button
+{
+	padding-left: 35px !important;
+	min-width: initial;
+}
+
+.jamf-button.icon::before,.jamf-button.clipboard::before,.jamf-tabs li.vertical a.clipboard.jamf-button::before,.jamf-tabs li.vertical a.icon.jamf-button::before
+{
+	position: absolute;
+	margin-right: 7px;
+	vertical-align: bottom;
+	top: 8px;
+	left: 10px;
+}
+
+.jamf-button.icon.small,.jamf-button.icon.jamf-button-table,.jamf-button.jamf-button-table.clipboard,.jamf-tabs li.vertical a.jamf-button-table.clipboard.jamf-button,.jamf-tabs li.vertical a.icon.jamf-button-table.jamf-button,.jamf-button.icon.jamf-button-table-left,.jamf-button.jamf-button-table-left.clipboard,.jamf-tabs li.vertical a.jamf-button-table-left.clipboard.jamf-button,.jamf-tabs li.vertical a.icon.jamf-button-table-left.jamf-button,.jamf-button.small.clipboard,.jamf-tabs li.vertical a.small.clipboard.jamf-button,.jamf-tabs li.vertical a.icon.small.jamf-button
+{
+	min-width: 65px;
+	padding-left: 28px;
+	padding-right: 14px;
+}
+
+.jamf-button.icon.small::before,.jamf-button.icon.jamf-button-table::before,.jamf-button.jamf-button-table.clipboard::before,.jamf-tabs li.vertical a.jamf-button-table.clipboard.jamf-button::before,.jamf-tabs li.vertical a.icon.jamf-button-table.jamf-button::before,.jamf-button.icon.jamf-button-table-left::before,.jamf-button.jamf-button-table-left.clipboard::before,.jamf-tabs li.vertical a.jamf-button-table-left.clipboard.jamf-button::before,.jamf-tabs li.vertical a.icon.jamf-button-table-left.jamf-button::before,.jamf-button.small.clipboard::before,.jamf-tabs li.vertical a.small.clipboard.jamf-button::before,.jamf-tabs li.vertical a.icon.small.jamf-button::before
+{
+	position: absolute;
+	top: 4px;
+	font-size: 14px;
+}
+
+.jamf-button.icon.small.icon-plus,.jamf-button.icon.icon-plus.jamf-button-table,.jamf-button.icon-plus.jamf-button-table.clipboard,.jamf-button.icon.icon-plus.jamf-button-table-left,.jamf-button.icon-plus.jamf-button-table-left.clipboard,.jamf-button.small.icon-plus.clipboard { padding-left: 24px; }
+.jamf-button.icon.small.icon-plus::before,.jamf-button.icon.icon-plus.jamf-button-table::before,.jamf-button.icon-plus.jamf-button-table.clipboard::before,.jamf-button.icon.icon-plus.jamf-button-table-left::before,.jamf-button.icon-plus.jamf-button-table-left.clipboard::before,.jamf-button.small.icon-plus.clipboard::before { left: 8px; }
+
+.jamf-button.clipboard,.jamf-tabs li.vertical a.clipboard.jamf-button
+{
+	-webkit-transition: content .3s;
+	transition: content .3s;
+}
+
+.jamf-button.rotate-45-deg::before,.jamf-tabs li.vertical a.rotate-45-deg.jamf-button::before
+{
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.jamf-button.next,.jamf-tabs li.vertical a.next.jamf-button,.jamf-button.previous,.jamf-tabs li.vertical a.previous.jamf-button,.jamf-button.last,.jamf-tabs li.vertical a.last.jamf-button,.jamf-button.first,.jamf-tabs li.vertical a.first.jamf-button
+{
+	width: 36px;
+	height: 36px;
+	min-width: 36px;
+}
+
+.jamf-button.next::after,.jamf-tabs li.vertical a.next.jamf-button::after,.jamf-button.previous::after,.jamf-tabs li.vertical a.previous.jamf-button::after,.jamf-button.last::after,.jamf-tabs li.vertical a.last.jamf-button::after,.jamf-button.first::after,.jamf-tabs li.vertical a.first.jamf-button::after
+{
+	float: left;
+	position: relative;
+	content: "";
+	width: 0;
+	top: 2px;
+}
+
+button.jamf-button.next::after,.jamf-button.previous::after,.jamf-tabs li.vertical a.previous.jamf-button::after,.jamf-button.last::after,.jamf-tabs li.vertical a.last.jamf-button::after,.jamf-button.first::after,.jamf-tabs li.vertical a.first.jamf-button::after
+{
+	float: left;
+	position: relative;
+	content: "";
+	width: 0;
+	top: 0;
+}
+
+.jamf-button.next,.jamf-tabs li.vertical a.next.jamf-button
+{
+	border-radius: 0 50% 50% 0;
+	margin-left: 7px;
+}
+
+.jamf-button.previous,.jamf-tabs li.vertical a.previous.jamf-button
+{
+	border-radius: 50% 0 0 50%;
+	margin-right: 7px;
+}
+
+.jamf-button.first::after,.jamf-tabs li.vertical a.first.jamf-button::after,.jamf-button.previous::after,.jamf-tabs li.vertical a.previous.jamf-button::after
+{
+	border: solid 4px;
+	pointer-events: none;
+	border-color: transparent #dddddd transparent transparent;
+	border-right-width: 5px;
+}
+
+.jamf-button.next::after,.jamf-tabs li.vertical a.next.jamf-button::after,.jamf-button.last::after,.jamf-tabs li.vertical a.last.jamf-button::after
+{
+	border: solid 4px;
+	pointer-events: none;
+	border-color: transparent transparent transparent #dddddd;
+	border-left-width: 5px;
+}
+
+.jamf-button.first::before,.jamf-tabs li.vertical a.first.jamf-button::before
+{
+	border: solid 4px;
+	pointer-events: none;
+	border-color: transparent #dddddd transparent transparent;
+	border-right-width: 5px;
+}
+
+.jamf-button.last::before,.jamf-tabs li.vertical a.last.jamf-button::before
+{
+	border: solid 4px;
+	pointer-events: none;
+	border-color: transparent transparent transparent #dddddd;
+	border-left-width: 5px;
+}
+
+.jamf-button.jamf-expand,.jamf-tabs li.vertical a.jamf-expand.jamf-button { margin-left: 1rem; }
+.jamf-button.jamf-collapse,.jamf-tabs li.vertical a.jamf-collapse.jamf-button { margin-left: 1rem; }
+.jamf-button+.jamf-button:not(.hideable),.jamf-tabs li.vertical a.jamf-button+.jamf-button:not(.hideable),.jamf-tabs li.vertical .jamf-button+a.jamf-button:not(.hideable),#form-buttons .jamf-button:not(.next):not(.previous):not(.select):not(select),.jamf-button#list-view-button { margin-left: 1rem; }
+li>.jamf-button,.jamf-tabs li.vertical li>a.jamf-button { margin: .5rem 1rem .5rem 0; }
+jamf-button+jamf-button { margin-left: 1rem; }
+
+.button-divider,button-divider
+{
+	border-left: 1px solid #cbd0d8;
+	height: 16px;
+	width: 1px;
+	margin: 0 1rem;
+	display: inline;
+}
+
