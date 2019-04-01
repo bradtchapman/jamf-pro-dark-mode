@@ -1888,7 +1888,6 @@ jamf-button.full-width,jamf-button.jamf-tabs-ul-wrapper.top-tabs,jamf-button.ful
 
 .jamf-button:hover,.jamf-tabs li.vertical a.jamf-button:hover
 {
-	color: #ffffff;
 	border: 2px solid #dddddd;
 	background: #7f7f7f;
 }
@@ -1918,7 +1917,7 @@ a.jamf-button.small,a.jamf-button.jamf-button-table,a.jamf-button.jamf-button-ta
 {
 	color: #ffffff;
 	border: 2px solid #dddddd;
-	background: #7f7f7f;
+	background: #3f3f3f;
 }
 
 .jamf-button::before,.jamf-tabs li.vertical a.jamf-button::before
@@ -1990,7 +1989,7 @@ a.jamf-button.icon-only::before,.jamf-tabs li.vertical a.icon-only.jamf-button::
 
 .jamf-button.jamf-button-table,.jamf-tabs li.vertical a.jamf-button-table.jamf-button
 {
-	color: #666;
+	color: #999999;
 	float: right;
 	max-height: 24px;
 	font-weight: 400;
@@ -1998,7 +1997,7 @@ a.jamf-button.icon-only::before,.jamf-tabs li.vertical a.icon-only.jamf-button::
 
 .jamf-button.jamf-button-table-left,.jamf-tabs li.vertical a.jamf-button-table-left.jamf-button
 {
-	color: #666;
+	color: #999999;
 	max-height: 24px;
 	font-weight: 400;
 }
