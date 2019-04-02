@@ -46,6 +46,9 @@ html, body, .jamf-list tbody td, .jamf-inner-list tbody td, .jamf-label {
     background: #2f2f2f;
 }
 
+.jamf-pro-dashboard #dashboard-container .setup-task p, .configurationprofilesdashboard #dashboard-container .setup-task p, .distributionserverdashboard #dashboard-container .setup-task p, .policiesdashboard #dashboard-container .setup-task p {
+    color: #dddddd;
+}
 
 .jamf-pro-dashboard #dashboard-container .dashboard-content #dashboard-header,.configurationprofilesdashboard #dashboard-container .dashboard-content #dashboard-header,.distributionserverdashboard #dashboard-container .dashboard-content #dashboard-header,.policiesdashboard #dashboard-container .dashboard-content #dashboard-header
 {
