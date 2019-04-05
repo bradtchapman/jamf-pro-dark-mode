@@ -46,6 +46,31 @@ html, body, .jamf-list tbody td, .jamf-inner-list tbody td, .jamf-label {
     background: #2f2f2f;
 }
 
+jamf-splash
+{
+	display: flex;
+	height: 100%;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background-color: #2f2f2f;
+	padding: 28px 0;
+}
+
+jamf-splash .jamf-splash-content
+{
+	background-color: #4f4f4f;
+	text-align: center;
+	border-radius: 4px;
+	padding: 28px;
+	-webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1),0 2px 0 0 #000000;
+	box-shadow: 0 1px 5px 0 rgba(0,0,0,0.1),0 2px 0 0 #000000;
+	max-width: 50%;
+}
+
 .jamf-pro-dashboard #dashboard-container .setup-task p, .configurationprofilesdashboard #dashboard-container .setup-task p, .distributionserverdashboard #dashboard-container .setup-task p, .policiesdashboard #dashboard-container .setup-task p {
     color: #dddddd;
 }
