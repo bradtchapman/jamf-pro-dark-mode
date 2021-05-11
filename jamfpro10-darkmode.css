@@ -1964,7 +1964,7 @@ jamf-button.full-width,jamf-button.jamf-tabs-ul-wrapper.top-tabs,jamf-button.ful
 .jamf-button:hover,.jamf-tabs li.vertical a.jamf-button:hover,.jamf-button:focus,.jamf-tabs li.vertical a.jamf-button:focus
 {
 	border-color: #ffffff;
-	background: #inherit;
+	background: inherit;
 	color: #ffffff;
 }
 
